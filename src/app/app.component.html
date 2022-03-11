@@ -1,6 +1,6 @@
 <div class="container">
-  <label>
-  <input type="text" [(ngModel)] = 'input' (keyup) = '0' #ticker>
+  <label for="ticker">Enter the Ticker:</label>
+  <input id='ticker' type="text" [(ngModel)] = 'input' (keyup) = '0' >
   <button (click) = 'helper()'>Click</button>
  <p>{{input}}</p>
   <div class="card">
