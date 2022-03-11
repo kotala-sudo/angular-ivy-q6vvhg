@@ -20,7 +20,9 @@ export class AppComponent {
   helper() {
     this.http
       .get(
-        'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${this.input}&apikey=75SILTV90V0SAI22'
+        'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=' +
+          this.input +
+          '&apikey=75SILTV90V0SAI22'
       )
       .subscribe((data) => {
         // alert(JSON.stringify(data));
