@@ -1,4 +1,4 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, VERSION, } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Stock } from './Stock';
 
@@ -17,6 +17,7 @@ export class AppComponent {
     this.helper();
   }
 
+ 
   helper() {
     this.http
       .get(
